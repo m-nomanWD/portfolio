@@ -197,7 +197,8 @@ const projectBtnContainer = document.querySelector(".project-btns");
 const proBtns = projectBtnContainer.querySelector("ul");
 const sideBarLinks = sideBar.querySelectorAll(".sidebar-links");
 const filterBtn = document.querySelector(".project-list-title");
-
+console.log(closer);
+console.log(sideBar);
 sideBarLinks.forEach((link) => {
   link.addEventListener("click", () => {
     sideBarReset();
@@ -251,6 +252,7 @@ hamburger.addEventListener("click", () => {
   sideBar.classList.add("sidebar-show");
   hero.style.filter = "blur(8px)";
   hamburger.style.display = "none";
+  console.log(sideBar);
   logConatainer.style.backgroundColor = "#112240";
 });
 closer.addEventListener("click", () => {

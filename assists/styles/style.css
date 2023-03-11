@@ -203,6 +203,30 @@ p {
 .logo {
   width: auto;
 }
+.logo-img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 6;
+}
+.logo-img::before {
+  content: "";
+  min-width: 100%;
+  min-height: 100%;
+  border: 2px solid var(--green);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateZ(45deg);
+  z-index: -1;
+}
+.logo-img img {
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  transform: translate(2px, 2px);
+}
 .btn-hero {
   border: solid 1px var(--green);
   width: 16rem;
@@ -594,10 +618,13 @@ footer h2 {
     justify-content: space-between;
     width: 100%;
     margin: auto 1rem;
-
+    /* background-color: #57cbff; */
     height: inherit;
+    padding: 1rem;
   }
-
+  .hambuger-container {
+    cursor: pointer;
+  }
   .hambuger {
     min-height: 2px;
     width: 2rem;
@@ -754,12 +781,58 @@ footer h2 {
   footer ul {
     display: flex;
   }
+
+  .sidebar-links-container {
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    background-color: var(--light-navy);
+    height: 100vh;
+    padding: 1rem 1rem;
+    font-family: inherit;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar-show {
+    transform: translateX(0%);
+    transition: 0.3s all ease-in-out;
+  }
+  .sidebar-header {
+    padding: 2rem 0;
+  }
+  .closer {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+  }
+  .sidebar-links span {
+    font-size: 1rem;
+  }
+  .sidebar-links a li {
+    color: var(--lightest-slate);
+    font-size: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: var(--f-roboto);
+  }
+  p {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 585px) {
   .feature-project .strip {
     padding: 1rem;
   }
-
+  p {
+    font-size: 18px;
+  }
   .right-align {
     padding: 1rem;
   }
