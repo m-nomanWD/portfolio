@@ -27,12 +27,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--navy);
+  scroll-behavior: smooth;
 }
+
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 16px;
 }
 
 /* Track */
@@ -43,9 +48,9 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--dark-slate);
-  border-radius: 3px;
-  height: 20px;
-  border-right: 6px solid var(--navy);
+  border-radius: 8px;
+
+  border: 4px solid var(--navy);
 }
 
 /* nav style */
@@ -223,7 +228,7 @@ p {
   content: "";
   min-width: 100%;
   min-height: 100%;
-  border: 3px solid var(--green);
+  border: 1px solid var(--green);
   display: block;
   position: absolute;
   top: 0;
@@ -361,7 +366,7 @@ a {
   color: var(--green);
   margin-right: 6px;
 }
-/* feature projects section */
+
 .feature-section {
   display: flex;
   flex-direction: column;
@@ -870,7 +875,7 @@ footer h2 {
   .closer {
     position: absolute;
     right: 2rem;
-    top: 1.5rem;
+    top: 2.5rem;
   }
   .sidebar-links span {
     font-size: 1rem;
