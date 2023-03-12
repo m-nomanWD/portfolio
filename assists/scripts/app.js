@@ -21,7 +21,7 @@ const data = [
     index: 1,
     company: "Flyo landing page Dark/Light",
     about:
-      "Tempor occaecat ullamco sint duis. Ex eiusmod magna commodo mollit fugiat occaecat laborum ullamco do et veniam qui. Qui aute amet nostrud adipisicing enim. Laborum nisi labore id aliqua nostrud cillum incididunt.\r\n",
+      "Tempor occaecat ullamco sint duis. Ex eiusmod magna commodo mollit fugiat occaecat laborum ",
     viewSite: {
       title: "vist site",
       urlLink: "www.google.com",
@@ -105,7 +105,7 @@ const data = [
     index: 6,
     company: "NAXDIS",
     about:
-      "Tempor occaecat ullamco sint duis. Ex eiusmod magna commodo mollit fugiat occaecat laborum ullamco do et veniam qui. Qui aute amet nostrud adipisicing enim. Laborum nisi labore id aliqua nostrud cillum incididunt.\r\n",
+      "Tempor occaecat ullamco sint duis. Ex eiusmod magna commodo mollit fugiat occaecat laborum u",
     viewSite: {
       title: "vist site",
       urlLink: "www.google.com",
@@ -122,7 +122,7 @@ const data = [
     index: 7,
     company: "JIMBIES",
     about:
-      "Aliqua exercitation et do laborum amet tempor adipisicing laboris minim ad quis minim. Commodo ipsum cillum voluptate culpa ipsum fugiat qui amet laborum dolore reprehenderit laborum officia. Deserunt quis Lorem commodo reprehenderit elit. Anim dolor qui est exercitation elit voluptate excepteur minim excepteur adipisicing. In occaecat esse fugiat fugiat consequat ullamco ut nisi aute nulla pariatur cupidatat. Fugiat et cupidatat nisi elit in consequat adipisicing. Fugiat mollit eiusmod ea sunt ullamco cillum.\r\n",
+      "Aliqua exercitation et do laborum amet tempor adipisicing laboris minim ad quis minim. Commodo ipsum cillum voluptate culpa ipsum fugiat qui amet laborum dolore reprehenderit ",
     viewSite: {
       title: "vist site",
       urlLink: "www.google.com",
@@ -243,7 +243,7 @@ function card(item) {
           <p>
         ${item.about}
           </p>
-          <p class="tools">${item.tech}</p>
+          <p class="tools" style="font-size: 14px; ">${item.tech}</p>
         </div>
       </div>
          `;
